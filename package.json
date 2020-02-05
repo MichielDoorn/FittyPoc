@@ -1,0 +1,38 @@
+{
+  "name": "fitty-tryout",
+  "version": "1.0.0",
+  "description": "Just a simple POC",
+  "main": "./src/index.html",
+  "author": "Michiel Doorn",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-file-include": "^2.1.1",
+    "gulp-htmlmin": "^5.0.1",
+    "prettier": "1.16.4",
+    "serve": "^11.3.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "start": "serve ./dist"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "fitty": "^2.3.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
